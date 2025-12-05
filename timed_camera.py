@@ -1,10 +1,11 @@
 import cv2
 import streamlit as st
 
-st.title("Motion Detector - Timed")
+st.title("Test")
 start = st.button('Start Video')
 
 if start:
+
     streamlit_image = st.image([])
     video = cv2.VideoCapture("video/test-video.mp4")
 
@@ -32,4 +33,5 @@ if start:
         #             thickness=2, lineType=cv2.LINE_AA)
 
         streamlit_image.image(frame)
-        # st.info("Video released successfully.")
+
+    st.info("Video released successfully.")
